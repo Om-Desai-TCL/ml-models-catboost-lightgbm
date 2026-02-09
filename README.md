@@ -5,7 +5,6 @@ Both models are implemented independently and include data preprocessing, featur
 
 ## Project Structure
 
-.
 ├── catboost.py  
 ├── lightgbm.py  
 ├── requirements.txt  
