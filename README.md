@@ -1,12 +1,14 @@
 # House Price Prediction using CatBoost and LightGBM
 
-This repository contains machine learning models built using CatBoost and LightGBM for house price prediction.  
-Both models are implemented independently and include data preprocessing, feature engineering, model training, tuning, and evaluation.
+This repository contains machine learning models for house price prediction implemented using **CatBoost** and **LightGBM**.  
+The complete workflow is implemented using **Jupyter Notebooks (`.ipynb`)**.
+
+The project demonstrates data preprocessing, feature engineering, model training, hyperparameter tuning, and performance evaluation.
 
 ## Project Structure
 
-├── catboost.py  
-├── lightgbm.py  
+├── catboost.ipynb  
+├── lightgbm.ipynb  
 ├── requirements.txt  
 ├── README.md  
 ├── .gitignore  
@@ -14,17 +16,17 @@ Both models are implemented independently and include data preprocessing, featur
 
 ## Models Implemented
 
-CatBoost Regressor:
-- Log transformation of target variable (SalePrice)
+### CatBoost Regressor
+- Log transformation of the target variable (`SalePrice`)
 - Handling missing values for numerical and categorical features
 - Ordinal encoding for categorical variables
 - Feature engineering (TotalSF, Age, RemodAge, OverallQual_SF)
 - Model tuning with early stopping
 - Evaluation using RMSE and R² score
 
-LightGBM Regressor:
-- Log transformation of target variable
-- Missing value handling
+### LightGBM Regressor
+- Log transformation of the target variable
+- Handling missing values
 - One-hot encoding for categorical features
 - Early stopping for optimal training
 - Hyperparameter tuning
@@ -32,11 +34,12 @@ LightGBM Regressor:
 
 ## Dataset
 
-Dataset: House Prices – Advanced Regression Techniques  
-Source: Kaggle  
+- Dataset: **House Prices – Advanced Regression Techniques**
+- Source: Kaggle
 
-The dataset is not included in this repository.  
-Before running the code, update the dataset path inside the scripts, for example:
+The dataset is **not included** in this repository.
+
+Before running the notebooks, update the dataset path inside the notebooks, for example:
 
 pd.read_csv("data/House_Price_train.csv")
 
@@ -48,12 +51,17 @@ pip install -r requirements.txt
 
 ## How to Run
 
-Run the models separately:
+Open the notebooks and run all cells:
 
-python catboost.py  
-python lightgbm.py  
+- catboost.ipynb
+- lightgbm.ipynb
 
-Each script performs data preprocessing, model training, prediction, and performance evaluation.
+Each notebook performs:
+- Data preprocessing
+- Feature engineering
+- Model training
+- Prediction
+- Performance evaluation
 
 ## Evaluation Metrics
 
@@ -64,7 +72,7 @@ Both metrics are printed after model evaluation.
 
 ## Key Highlights
 
-- End-to-end machine learning pipeline
+- End-to-end machine learning pipeline using Jupyter Notebooks
 - Feature engineering and model tuning
 - Early stopping to reduce overfitting
 - Clean and reproducible project structure
