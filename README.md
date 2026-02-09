@@ -7,8 +7,8 @@ The project demonstrates data preprocessing, feature engineering, model training
 
 ## Project Structure
 
-├── catboost.ipynb  
-├── lightgbm.ipynb  
+├── CatBoost.ipynb  
+├── LightGBM.ipynb  
 ├── requirements.txt  
 ├── README.md  
 ├── .gitignore  
